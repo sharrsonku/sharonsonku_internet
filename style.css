@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(illustrations/zwart.jpeg);
+    background-size: contain;
+}
+nav ul{
+    text-align: center;
+}
+ul li{ 
+    list-style: none;
+    line-height: 5em;
+    display: inline-block;
+    text-align: center;
+}
+ul li a{
+    font-size: 1.5em;
+    font-weight: 800;
+    text-decoration: none; 
+    color: rgb(47, 149, 218);
+    padding: 12px;
+    font-family: 'impact';
+    text-align: center;
+    display: block;
+}
+nav ul li a.active{color: white;}
+a:hover{color: rgb(255, 255, 255);transition: 0.2s;}
+h1 {
+    text-align: center;
+}
+h1,h2,h3 {
+    font-family:'Tahoma';
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+}
+p{
+    color: rgb(47, 149, 218);
+    font-family: monospace; 
+    font-weight: 400; 
+    font-size: large ;}
+                                                                        /*End style nav en font*/
+.HOME h1{
+    font-size:96px; 
+    font-weight: 800;
+    font-family: 'impact';
+    letter-spacing: 2px;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.HOME h1 {
+    color: rgb(47, 149, 218); 
+    justify-items: center;
+}
+.HOME main a{ 
+    text-decoration: none; 
+    display: inline-block;  
+    color: rgb(255, 255, 255) ; 
+    font-size: 21px; 
+    border: 2.5px solid rgb(255, 255, 255);
+    padding: 10px 32px;
+    border-radius: 5%;
+    font-family: 'impact';
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.HOME main a:hover{background: rgba(47, 149, 218);transition: 0.3s;}
+
+.back-video{
+    position:absolute;
+    background-size: cover;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;;
+}
+footer{
+    font-family: 'impact';
+    font-weight: 400; 
+    letter-spacing: 1px;
+    top: 95%;
+    position: absolute;
+    color: rgb(255, 255, 255);}
+
+                                                                        /*End Home begin */
+
+/*start style Graffiti*/
+    
+
+.allaboutgraff {
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    gap: 1%;
+    text-align: center;
+}
+.allaboutgraffiti h1{
+    font-size: 4em;
+    padding-top: 0%;color: rgb(255, 255, 255);} 
+                                                             /*End graffiti and begin the notorius*/
+
+.image img{width: 46vw;height:100vh;}
+
+.outercontainer{  
+    width: 100vw;
+    height: 100vh;
+    overflow-x:scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    align-content: center;
+}
+.textbox{width: 100;}
+
+.container, .container1, .container2,.container3, .container0{ 
+    flex: none;
+    scroll-snap-align: start;
+    display: flex;
+    align-items:center;
+    gap: 1em;
+    width: 100vw;
+}
+
+                                                                        /*end notorious and begin styles*/
+.grid-container{
+    display: grid;
+    align-content:space-between;
+    gap: 1em;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid{text-align: center;}
+
+.grid1 h2{
+    color:rgba(47, 149, 218) ; 
+    text-align: center;
+    font-size:3em;
+}
+.grid1 p{color: rgb(255, 255, 255); text-align: center;}
+
+.grid-container img{width: 25em;height: 15em;}
+
+.maincontainer img{width: 25em;height: 15em;}
+
+
+
+
+
+
+/*Start media queries*/
+@media(max-width:1402px)
+{
+   .HOME h1, h1{font-size:73px;}
+    .HOME main a{font-size: 22px;}
+}
+@media(max-width:1089px){
+    .allaboutgraff h1{font-size:64px;}
+    .HOME main a{font-size: 20px;}
+}
+
+@media(max-width:646px){
+    .HOME nav a{font-size: 16px;}
+    .HOME h1{font-size:28x;}
+    .HOME main a{font-size: 20px;}
+}
+@media(max-width:559px){
+    .HOME nav a{font-size: 14px;}
+    .HOME h1{font-size:30px;}
+    .HOME main a{font-size: 16px;}
+}
